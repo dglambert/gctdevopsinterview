@@ -69,5 +69,70 @@ namespace GCTDevOpsInterviewTests
 
 
 
+
+
+
+
+        [TestMethod]
+        public void localhost80_Valid_Scheme()
+        {
+            string localhost80 = "http://localhost:80";
+
+            string expectedScheme = "http";
+
+            Assert.AreEqual(expectedScheme, GCTDevOpsInterview.UriParser.GetScheme(localhost80));
+        }
+
+        [TestMethod]
+        public void localhost80_Valid_Host()
+        {
+            string localhost80 = "http://localhost:80";
+
+            string expectedHost = "localhost";
+
+            Assert.AreEqual(expectedHost, GCTDevOpsInterview.UriParser.GetHost(localhost80));
+        }
+
+        [TestMethod]
+        public void localhost80_Valid_Path()
+        {
+            string localhost80 = "http://localhost:80";
+
+            string expectedPath = "";
+
+            Assert.AreEqual(expectedPath, GCTDevOpsInterview.UriParser.GetPath(localhost80));
+        }
+
+        [TestMethod]
+        public void localhost80_Valid_Port()
+        {
+            string localhost80 = "http://localhost:80";
+
+            string expectedPort = "80";
+
+            Assert.AreEqual(expectedPort, GCTDevOpsInterview.UriParser.GetPort(localhost80));
+        }
+
+        [TestMethod]
+        public void localhost80_Valid_Query()
+        {
+            string localhost80 = "http://localhost:80";
+
+            string expectedQuery = "";
+
+            Assert.AreEqual(expectedQuery, GCTDevOpsInterview.UriParser.GetQuery(localhost80));
+        }
+
+        [TestMethod]
+        public void localhost80_Valid_Fragment()
+        {
+            string localhost80 = "http://localhost:80";
+
+            string expectedFragment = "";
+
+            Assert.AreEqual(expectedFragment, GCTDevOpsInterview.UriParser.GetFragment(localhost80));
+        }
+
+
     }
 }

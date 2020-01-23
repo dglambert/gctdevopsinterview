@@ -200,5 +200,72 @@ namespace GCTDevOpsInterviewTests
             Assert.AreEqual(expectedFragment, GCTDevOpsInterview.UriParser.GetFragment(githubrepo));
         }
 
+
+
+
+
+
+
+
+        [TestMethod]
+        public void bucotrattoria_Valid_Scheme()
+        {
+            string bucotrattoria = "https://www.toasttab.com/buco-trattoria-buco-trattoria/v3#745bcd24-4fd1-4e85-b3f5-83e828dac7f9";
+
+            string expectedScheme = "https";
+
+            Assert.AreEqual(expectedScheme, GCTDevOpsInterview.UriParser.GetScheme(bucotrattoria));
+        }
+
+        [TestMethod]
+        public void bucotrattoria_Valid_Host()
+        {
+            string bucotrattoria = "https://www.toasttab.com/buco-trattoria-buco-trattoria/v3#745bcd24-4fd1-4e85-b3f5-83e828dac7f9";
+
+            string expectedHost = "www.toasttab.com";
+
+            Assert.AreEqual(expectedHost, GCTDevOpsInterview.UriParser.GetHost(bucotrattoria));
+        }
+
+        [TestMethod]
+        public void bucotrattoria_Valid_Path()
+        {
+            string bucotrattoria = "https://www.toasttab.com/buco-trattoria-buco-trattoria/v3#745bcd24-4fd1-4e85-b3f5-83e828dac7f9";
+
+            string expectedPath = "/buco-trattoria-buco-trattoria/v3";
+
+            Assert.AreEqual(expectedPath, GCTDevOpsInterview.UriParser.GetPath(bucotrattoria));
+        }
+
+        [TestMethod]
+        public void bucotrattoria_Valid_Port()
+        {
+            string bucotrattoria = "https://www.toasttab.com/buco-trattoria-buco-trattoria/v3#745bcd24-4fd1-4e85-b3f5-83e828dac7f9";
+
+            string expectedPort = "";
+
+            Assert.AreEqual(expectedPort, GCTDevOpsInterview.UriParser.GetPort(bucotrattoria));
+        }
+
+        [TestMethod]
+        public void bucotrattoria_Valid_Query()
+        {
+            string bucotrattoria = "https://www.toasttab.com/buco-trattoria-buco-trattoria/v3#745bcd24-4fd1-4e85-b3f5-83e828dac7f9";
+
+            string expectedQuery = "";
+
+            Assert.AreEqual(expectedQuery, GCTDevOpsInterview.UriParser.GetQuery(bucotrattoria));
+        }
+
+        [TestMethod]
+        public void bucotrattoria_Valid_Fragment()
+        {
+            string bucotrattoria = "https://www.toasttab.com/buco-trattoria-buco-trattoria/v3#745bcd24-4fd1-4e85-b3f5-83e828dac7f9";
+
+            string expectedFragment = "745bcd24-4fd1-4e85-b3f5-83e828dac7f9";
+
+            Assert.AreEqual(expectedFragment, GCTDevOpsInterview.UriParser.GetFragment(bucotrattoria));
+        }
+
     }
 }

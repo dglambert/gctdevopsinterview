@@ -10,10 +10,15 @@ namespace GCTDevOpsInterview
     {
         public static string GetScheme(string url)
         {
-            return "https";
+            return "";
         }
 
         public static string GetHost(string url)
+        {
+            return "";
+        }
+
+        public static string GetPath(string url)
         {
             return "";
         }

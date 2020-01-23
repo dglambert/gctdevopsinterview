@@ -1,0 +1,7 @@
+C:\Users\dlambert\source\repos\GCTDevOpsInterview\GCTDevOpsInterview\bin\Debug\GCTDevOpsInterview.exe.config
+C:\Users\dlambert\source\repos\GCTDevOpsInterview\GCTDevOpsInterview\bin\Debug\GCTDevOpsInterview.exe
+C:\Users\dlambert\source\repos\GCTDevOpsInterview\GCTDevOpsInterview\bin\Debug\GCTDevOpsInterview.pdb
+C:\Users\dlambert\source\repos\GCTDevOpsInterview\GCTDevOpsInterview\obj\Debug\GCTDevOpsInterview.csprojAssemblyReference.cache
+C:\Users\dlambert\source\repos\GCTDevOpsInterview\GCTDevOpsInterview\obj\Debug\GCTDevOpsInterview.csproj.CoreCompileInputs.cache
+C:\Users\dlambert\source\repos\GCTDevOpsInterview\GCTDevOpsInterview\obj\Debug\GCTDevOpsInterview.exe
+C:\Users\dlambert\source\repos\GCTDevOpsInterview\GCTDevOpsInterview\obj\Debug\GCTDevOpsInterview.pdb

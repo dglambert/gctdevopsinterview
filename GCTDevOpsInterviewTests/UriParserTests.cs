@@ -134,5 +134,71 @@ namespace GCTDevOpsInterviewTests
         }
 
 
+
+
+
+
+
+
+        [TestMethod]
+        public void githubrepo_Valid_Scheme()
+        {
+            string githubrepo = "https://github.com/dglambert/gctdevopsinterview";
+
+            string expectedScheme = "https";
+
+            Assert.AreEqual(expectedScheme, GCTDevOpsInterview.UriParser.GetScheme(githubrepo));
+        }
+
+        [TestMethod]
+        public void githubrepo_Valid_Host()
+        {
+            string githubrepo = "https://github.com/dglambert/gctdevopsinterview";
+
+            string expectedHost = "github.com";
+
+            Assert.AreEqual(expectedHost, GCTDevOpsInterview.UriParser.GetHost(githubrepo));
+        }
+
+        [TestMethod]
+        public void githubrepo_Valid_Path()
+        {
+            string githubrepo = "https://github.com/dglambert/gctdevopsinterview";
+
+            string expectedPath = "/dglambert/gctdevopsinterview";
+
+            Assert.AreEqual(expectedPath, GCTDevOpsInterview.UriParser.GetPath(githubrepo));
+        }
+
+        [TestMethod]
+        public void githubrepo_Valid_Port()
+        {
+            string githubrepo = "https://github.com/dglambert/gctdevopsinterview";
+
+            string expectedPort = "";
+
+            Assert.AreEqual(expectedPort, GCTDevOpsInterview.UriParser.GetPort(githubrepo));
+        }
+
+        [TestMethod]
+        public void githubrepo_Valid_Query()
+        {
+            string githubrepo = "https://github.com/dglambert/gctdevopsinterview";
+
+            string expectedQuery = "";
+
+            Assert.AreEqual(expectedQuery, GCTDevOpsInterview.UriParser.GetQuery(githubrepo));
+        }
+
+        [TestMethod]
+        public void githubrepo_Valid_Fragment()
+        {
+            string githubrepo = "https://github.com/dglambert/gctdevopsinterview";
+
+            string expectedFragment = "";
+
+            Assert.AreEqual(expectedFragment, GCTDevOpsInterview.UriParser.GetFragment(githubrepo));
+        }
+
     }
 }

@@ -267,5 +267,73 @@ namespace GCTDevOpsInterviewTests
             Assert.AreEqual(expectedFragment, GCTDevOpsInterview.UriParser.GetFragment(bucotrattoria));
         }
 
+
+
+
+
+
+
+
+        [TestMethod]
+        public void twitter_Valid_Scheme()
+        {
+            string twitter = "https://twitter.com/ycombinator?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor";
+
+            string expectedScheme = "https";
+
+            Assert.AreEqual(expectedScheme, GCTDevOpsInterview.UriParser.GetScheme(twitter));
+        }
+
+        [TestMethod]
+        public void twitter_Valid_Host()
+        {
+            string twitter = "https://twitter.com/ycombinator?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor";
+
+            string expectedHost = "twitter.com";
+
+            Assert.AreEqual(expectedHost, GCTDevOpsInterview.UriParser.GetHost(twitter));
+        }
+
+        [TestMethod]
+        public void twitter_Valid_Path()
+        {
+            string twitter = "https://twitter.com/ycombinator?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor";
+
+            string expectedPath = "/ycombinator";
+
+            Assert.AreEqual(expectedPath, GCTDevOpsInterview.UriParser.GetPath(twitter));
+        }
+
+        [TestMethod]
+        public void twitter_Valid_Port()
+        {
+            string twitter = "https://twitter.com/ycombinator?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor";
+
+            string expectedPort = "";
+
+            Assert.AreEqual(expectedPort, GCTDevOpsInterview.UriParser.GetPort(twitter));
+        }
+
+        [TestMethod]
+        public void twitter_Valid_Query()
+        {
+            string twitter = "https://twitter.com/ycombinator?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor";
+
+            string expectedQuery = "ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor";
+
+            Assert.AreEqual(expectedQuery, GCTDevOpsInterview.UriParser.GetQuery(twitter));
+        }
+
+        [TestMethod]
+        public void twitter_Valid_Fragment()
+        {
+            string twitter = "https://twitter.com/ycombinator?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor";
+
+            string expectedFragment = "";
+
+            Assert.AreEqual(expectedFragment, GCTDevOpsInterview.UriParser.GetFragment(twitter));
+        }
+
+
     }
 }
